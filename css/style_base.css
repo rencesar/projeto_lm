@@ -1,0 +1,44 @@
+
+
+/* --------------------------POOOOOOSSS MODIFICAÇÃO-------------------------- */
+/* --------------------------POOOOOOSSS MODIFICAÇÃO-------------------------- */
+/* --------------------------POOOOOOSSS MODIFICAÇÃO-------------------------- */
+/* --------------------------POOOOOOSSS MODIFICAÇÃO-------------------------- */
+/* --------------------------POOOOOOSSS MODIFICAÇÃO-------------------------- */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+
+header {
+  margin: 0;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+header .cabecalho {
+  height: 10vh;
+}
+
+header .menu {
+  padding: 0;
+  height: 2em;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  list-style: none;
+}
+
+header .menu .menu-item {
+  background-color: #111111;
+  color: white;
+}
+
+header .slide-show img{
+  height: 70vh;
+}
