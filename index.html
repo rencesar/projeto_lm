@@ -4,24 +4,39 @@
     <meta charset="utf-8">
     <title>GRUDE - PB</title>
     <link rel="stylesheet" href="css/style_base.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <header>
       <div class="cabecalho">
         <img src="img/grude_logo.png" alt="" class="logo">
         <img src="img/slack_invite.png" alt="" class="slack">
+        <ul class="menu">
+          <li class="menu-item"><a href="">Home</a></li>
+          <li class="menu-item"><a href="">Noticias</a></li>
+          <li class="menu-item"><a href="">Publicações</a></li>
+          <li class="menu-item"><a href="">Agenda</a></li>
+          <li class="menu-item"><a href="">Sobre</a></li>
+          <li class="menu-item"><a href="">Contato</a></li>
+        </ul>
       </div>
-      <ul class="menu">
-        <li class="menu-item">Home</li>
-        <li class="menu-item">Noticias</li>
-        <li class="menu-item">Publicações</li>
-        <li class="menu-item">Agenda</li>
-        <li class="menu-item">Sobre</li>
-        <li class="menu-item">Contato</li>
-      </ul>
-      <div class="slide-show">
+      <div id="slideshow" class="slide-show">
         <img src="img/game_developer.png" alt="">
+        <img src="img/img-massa.jpg" alt="">
+        <img src="img/outraimgmassa.jpeg" alt="">
       </div>
     </header>
   </body>
+  <script type="text/javascript">
+  $("#slideshow > img:gt(0)").hide();
+
+  setInterval(function() {
+  $('#slideshow > img:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+  }, 3000);
+  </script>
 </html>
