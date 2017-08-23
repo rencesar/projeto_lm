@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
   margin: 0;
 }
 
@@ -7,55 +7,92 @@ header {
   margin: 0;
   background-attachment: fixed;
   background-position: center;
+  background-image: url('../img/outraimgmassa.jpeg');
+  background-size: cover;
+  background-color: #333333;
+  background-blend-mode:soft-light;
   height: 100vh;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
 }
 
 header .cabecalho {
   height: 15vh;
-  background-color: black;
 }
 
 header .menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: ".  menu";
+}
+
+header .menu ul {
+  background-color: rgba(17, 17, 17, 0.5);
+  grid-area: menu;
   padding: 0;
-  height: 2em;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, auto);
+  justify-content: space-between;
+  align-content: space-between;
   list-style: none;
 }
 
-header .menu .menu-item {
-  background-color: #111111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+header .menu .menu-item{
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+  font-size: 1.3em;
 }
 
-header .menu .menu-item a {
+header .menu .menu-item:hover{
+  box-shadow: 0 5px 15px rgba(153, 255, 0,0.3);
+  color: white;
+}
+
+header .menu .menu-item a{
+  color: white;
   text-decoration: none;
-  color: green;
 }
 
-header .menu .menu-item:hover {
-  background-color: white;
-  border: 5px solid black;
-  border-radius: 5%;
+header .centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 80vh;
+  color: white;
 }
 
-header .menu .menu-item:hover a {
-  color: green;
+header .chaves {
+  font-size: 50vh;
+  color: #99FF00;
 }
 
-header .slide-show {
-  height: 84.6vh;
+header .apresentação {
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 30%;
+  height: 50vh;
+  text-align: center;
 }
 
-header .slide-show img{
-  max-width:100%;
-  max-height:100%;
-  width: 100%;
-  height: 100%;
+header .apresentação img {
+  align-self: center;
+  width: 20%;
+}
+
+header .comunidades{
+  height: 2em;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-left: 0;
+  list-style: none;
 }
