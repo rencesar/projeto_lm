@@ -3,39 +3,77 @@
   <head>
     <meta charset="utf-8">
     <title>GRUDE - PB</title>
+    <link rel="stylesheet" href="css/hover.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <link rel="stylesheet" href="css/style_base.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
   </head>
   <body>
     <header>
       <div class="cabecalho">
         <div class="menu">
+          <img src="img/logo.jpg" alt="Logo do Grude">
           <ul>
-            <li class="menu-item"><a href="">Home</a></li>
-            <li class="menu-item"><a href="">Noticias</a></li>
-            <li class="menu-item"><a href="">Publicações</a></li>
-            <li class="menu-item"><a href="">Agenda</a></li>
-            <li class="menu-item"><a href="">Sobre</a></li>
-            <li class="menu-item"><a href="">Contato</a></li>
+            <li class="menu-item"><a class="hvr-underline-from-center hvr-grow" href="index.html">Home</a></li>
+            <li class="menu-item"><a class="hvr-underline-from-center hvr-grow" href="noticias.html">Notícias</a></li>
+            <li class="menu-item"><a class="hvr-underline-from-center hvr-grow" href="">Publicações</a></li>
+            <li class="menu-item"><a class="hvr-underline-from-center hvr-grow" href="">Agenda</a></li>
+            <li class="menu-item"><a class="hvr-underline-from-center hvr-grow" href="">Sobre</a></li>
+            <li class="menu-item"><a class="hvr-underline-from-center hvr-grow" href="">Contato</a></li>
           </ul>
         </div>
         <div class="centro">
-          <span class="chaves">{</span>
-          <div class="apresentação">
-            <img src="img/logo.jpg" alt="Logo do Grude"><br>
-            <p>O Grude-PB é uma comunidade de desenvolvedores da Paraiba, onde reune diversas comunidades, como JampaRuby, PHP-Pb, PUG-PB e etc. Acesse nosso slack.</p>
-            <ul class="comunidades">
-              <li class="comunidade">Grude-PB</li>
-              <li class="comunidade">Hora Extra</li>
-              <li class="comunidade">PHP-PB</li>
-              <li class="comunidade">JampaRuby</li>
-              <li class="comunidade">PUG-PB</li>
-            </ul>
-          </div>
-          <span class="chaves">}</span>
+          <span class="chaves prev hvr-grow">{</span>
+            <div class="apresentação">
+              <div id="slide">
+                <div>
+                  <img src="img/logo.jpg" alt="Logo do Grude">
+                  <p>O Grude-PB é uma comunidade de desenvolvedores da Paraíba, onde reúne diversas comunidades, como JampaRuby, PHP-PB, PUG-PB e etc. Acesse nosso slack.</p>
+                </div>
+                <div>
+                  <img src="img/horaextra.jpeg" alt="Logo do Hora Extra">
+                  <p>O Grude-PB é uma comunidade de desenvolvedores da Paraíba, onde reúne diversas comunidades, como JampaRuby, PHP-PB, PUG-PB e etc. Acesse nosso slack.</p>
+                </div>
+                <div>
+                  <img src="img/php-pb.svg" alt="Logo do PHP-PB">
+                  <p>O Grude-PB é uma comunidade de desenvolvedores da Paraíba, onde reúne diversas comunidades, como JampaRuby, PHP-PB, PUG-PB e etc. Acesse nosso slack.</p>
+                </div>
+                <div>
+                  <img src="img/jamparuby.jpeg" alt="Logo do Jampa Ruby">
+                  <p>O Grude-PB é uma comunidade de desenvolvedores da Paraíba, onde reúne diversas comunidades, como JampaRuby, PHP-PB, PUG-PB e etc. Acesse nosso slack.</p>
+                </div>
+                <div>
+                  <img src="img/pug-pb.png" alt="Logo do PUG-PB">
+                  <p>O Grude-PB é uma comunidade de desenvolvedores da Paraíba, onde reúne diversas comunidades, como JampaRuby, PHP-PB, PUG-PB e etc. Acesse nosso slack.</p>
+                </div>
+              </div>
+              <ul class="comunidades">
+                <li class="comunidade"><a class="hvr-grow">Grude-PB</a></li>
+                <li class="comunidade"><a class="hvr-grow">Hora Extra</a></li>
+                <li class="comunidade"><a class="hvr-grow">PHP-PB</a></li>
+                <li class="comunidade"><a class="hvr-grow">JampaRuby</a></li>
+                <li class="comunidade"><a class="hvr-grow">PUG-PB</a></li>
+              </ul>
+            </div>
+            <span class="chaves next hvr-grow">}</span>
         </div>
       </div>
     </header>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript">
+    $('#slide').slick({
+      prevArrow: $('.prev'),
+      nextArrow: $('.next'),
+    });
+    $('.comunidades a').click(function(e){
+        e.preventDefault();
+        slideIndex = $(this).index();
+        var slide = $('#slide');
+        slide[0].slick.slickGoTo(parseInt(slideIndex));
+    });
+  </script>
 </html>
