@@ -13,8 +13,11 @@ header {
 }
 
 main {
-  background-color: white;
+  background-image: url("../img/gradient1.svg");
   padding-bottom: 5%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .cabecalho {
@@ -76,16 +79,55 @@ main h1 {
   background-color: #99CC00;
 }
 
-.grid-noticias {
+.noticias {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  margin: 5% 20%;
-  padding: 2%;
-  box-shadow: -10px 0px 0px #FF0000;
-  background-color: white;
-  box-sizing: border-box;
-  border: 10px solid black;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  align-items: center;
+
 }
+
+
+.noticia {
+  position: relative;
+  display: grid;
+  margin: 3% 5%;
+  grid-template-columns: 1fr 2fr;
+  padding: 2%;
+  background-color: rgba(255,255,255,0.8);
+  box-sizing: border-box;
+  transition: all .7s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+main .noticia .data {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #99CC00;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.noticia:hover {
+  font-size: 1.3em;
+}
+
+.ruby {
+  box-shadow: -10px 0px 0px #FF0000;
+}
+
+.horaextra {
+  box-shadow: -10px 0px 0px #FFEE00;
+}
+
+.grudepb {
+  box-shadow: -10px 0px 0px #00FF00;
+}
+
+.phppb {
+  box-shadow: -10px 0px 0px #0000FF;
+}
+
 
 .grid-noticias img {
   grid-column: 1;
@@ -171,4 +213,5 @@ main h1 {
 
 .footer-content .icone-social a:hover {
   color: #99FF00;
+  font-size: 1.3em;
 }
