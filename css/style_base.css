@@ -52,6 +52,7 @@ header .apresentação #slide img {
 }
 
 header .comunidades {
+  cursor: pointer;
   height: 2em;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
