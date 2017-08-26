@@ -1,99 +1,104 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <title>GRUDE - PB</title>
-  <link rel="stylesheet" href="css/style_contato.css">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  
-</head>
-<!--<body>-->
-
-<body>
-  <header>
-    <div class="cabecalho">
-      <ul class="menu">
-        <li class="menu-item"><a href="index.html">Home</a></li>
-        <li class="menu-item"><a href="noticias.html">Notícias</a></li>
-        <li class="menu-item"><a href="">Publicações</a></li>
-        <li class="menu-item"><a href="">Agenda</a></li>
-        <li class="menu-item"><a href="">Sobre</a></li>
-        <li class="menu-item"><a href="contato.html">Contato</a></li>
-      </ul>
-    </div>
-  </header>
-  <!----- FORMULÁRIO---->
-  <main>
-  <div class="headline"><h1>CONTATOS</h1></div>
-  <div id="container">
-      <h1 class="contatonome">&bull;  FALE CONOSCO  &bull;</h1>
-        <div class="icon_wrapper">
-        
-      </div>
-  <form action="#" method="post" id="contact_form">
-    <div class="name">
-      <label for="name"></label>
-      <input type="text" placeholder="Nome" name="name" id="name_input" required>
-    </div>
-    <div class="email">
-      <label for="email"></label>
-      <input type="email" placeholder="E-mail" name="email" id="email_input" required>
-    </div>
-    <div class="telephone">
-      <label for="name"></label>
-      <input type="text" placeholder="Telefone" name="telephone" id="telephone_input" required>
-    </div>
-    <div class="subject">
-      <label for="subject"></label>
-      <select placeholder="Subject line" name="subject" id="subject_input" required>
-        <option disabled hidden selected>Comunidades</option>
-        <option>Hora Extra</option>
-        <option>Jampa-ruby</option>
-        <option>Paraiba JS</option>
-        <option>PHP-PB</option>
-        <option>PUG-PB</option>
-      </select>
-    </div>
-    <div class="message">
-      <label for="message"></label>
-      <textarea name="message" placeholder="Mensagem" id="message_input" cols="30" rows="5" required></textarea>
-    </div>
-    <div class="submit">
-      <input type="submit" value="ENVIAR" id="form_button" />
-    </div>
-  </form>
-</div>
-</main>
-                <!---- FOOTER---->
-  <div class="barra-de-estilo"></div>
-  <footer>
-    <div class="footer-content">
-      <div class="subtitle about">
-        <h2>Sobre</h2>
-        <p>O grude PB é uma comunidade de desenvolvedores da PB que reúne diversas comunidades. Venha se juntar conosco!</p>
-      </div>
-      <div class="subtitle social">
-        <h2>Social</h2>
-        <ul class="icone-social">
-          <li>
-            <a href="https://www.facebook.com/groups/grudepb/"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/GrudePB"><i class="fa fa-github fa-2x" aria-hidden="true"></i></i></a>
-          </li>
-          <li>
-            <a href="http://grudepb.herokuapp.com/"><i class="fa fa-slack fa-2x" aria-hidden="true"></i></a>
-          </li>
-        </ul>
-      </div>
-      <div class="subtitle contact">
-        <h2>Contato</h2>                     
-              <p>TEL: (83)0110-0001<p>          
-      </div>
-    </div>
-    </div>
-  </footer>
-  </body>
+   <head>
+      <meta charset="utf-8">
+      <title>GRUDE - PB</title>
+      <link rel="stylesheet" href="css/style_contato.css">
+      <link rel="stylesheet" href="css/menu.css">
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+   </head>
+   <body>
+     <header>
+       <div class="cabecalho">
+         <nav class="menu">
+           <img src="img/logo.jpg" alt="Logo do Grude">
+           <a id="nav-menu" class="nav-menu"><i class="fa fa-bars" aria-hidden="true"></i> Menu</a>
+           <div class="menu-container">
+             <ul class="menu-lista" id="menu">
+               <li class="menu-item"><a class="hvr-underline-from-center hvr-grow" href="index.html">Home</a></li>
+               <li class="menu-item"><a class="hvr-underline-from-center hvr-grow" href="noticias.html">Notícias</a></li>
+               <li class="menu-item"><a class="hvr-underline-from-center hvr-grow" href="">Contato</a></li>
+             </ul>
+           </div>
+         </nav>
+       </div>
+     </header>
+      <!-------------- FORMULÁRIO-------------->
+      <main>
+         <div class="headline">
+            <h1>CONTATOS</h1>
+         </div>
+         <div id="container">
+            <h1 class="contatonome">&bull; FALE CONOSCO &bull;</h1>
+            <div class="icon_wrapper">
+            </div>
+            <form action="#" method="post" id="contact_form">
+               <div class="name">
+                  <label for="name"></label>
+                  <input type="text" placeholder="Nome" name="name" id="name_input" required>
+               </div>
+               <div class="email">
+                  <label for="email"></label>
+                  <input type="email" placeholder="E-mail" name="email" id="email_input" required>
+               </div>
+               <div class="telephone">
+                  <label for="name"></label>
+                  <input type="text" placeholder="Telefone" name="telephone" id="telephone_input" required>
+               </div>
+               <div class="subject">
+                  <label for="subject"></label>
+                  <select placeholder="Subject line" name="subject" id="subject_input" required>
+                     <option disabled hidden selected>Comunidades</option>
+                     <option>Hora Extra</option>
+                     <option>Jampa-ruby</option>
+                     <option>Paraiba JS</option>
+                     <option>PHP-PB</option>
+                     <option>PUG-PB</option>
+                  </select>
+               </div>
+               <div class="message">
+                  <label for="message"></label>
+                  <textarea name="message" placeholder="Mensagem" id="message_input" cols="30" rows="5" required></textarea>
+               </div>
+               <div class="submit">
+                  <input type="submit" value="ENVIAR" id="form_button" />
+               </div>
+            </form>
+         </div>
+         <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.0670493763046!2d-34.82685568472709!3d-7.118228771782337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd2f4507ca7d%3A0x6b96df2e8441c421!2sChurrasquinho+do+Ivanildo!5e0!3m2!1spt-BR!2sbr!4v1503760539848" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+      </main>
+      <!-------------- FOOTER---------------->
+      <div class="barra-de-estilo"></div>
+      <footer>
+         <div class="footer-content">
+            <div class="subtitle about">
+               <h2>Sobre</h2>
+               <p>O grude PB é uma comunidade de desenvolvedores da PB que reúne diversas comunidades. Venha se juntar conosco!</p>
+            </div>
+            <div class="subtitle social">
+               <h2>Social</h2>
+               <ul class="icone-social">
+                  <li>
+                     <a href="https://www.facebook.com/groups/grudepb/"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                     <a href="https://github.com/GrudePB"><i class="fa fa-github fa-2x" aria-hidden="true"></i></i></a>
+                  </li>
+                  <li>
+                     <a href="http://grudepb.herokuapp.com/"><i class="fa fa-slack fa-2x" aria-hidden="true"></i></a>
+                  </li>
+               </ul>
+            </div>
+            <div class="subtitle contact">
+               <h2>Contato</h2>
+               <p>TEL: (83)0110-0001
+               <p>
+            </div>
+         </div>
+         </div>
+      </footer>
+   </body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script type="text/javascript" src="js/menu.js"></script>
 </html>
